@@ -1,0 +1,135 @@
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+.navigation{
+    list-style-type: none;
+    color: hsl(228, 39%, 23%);
+}
+
+.blueC{
+    color: hsl(228, 39%, 23%);
+}
+
+.navigation a{
+    text-decoration: none;
+}
+
+ul li{
+    margin-left: px;
+}
+
+ul li:hover{
+    color: hsl(227, 12%, 61%);
+}
+
+.aboutus{
+    width: 100px;
+}
+
+.getStarted{
+    background-color:hsl(12, 88%, 59%);
+	border-radius:28px;
+	border:none;
+	display:inline-block;
+    box-shadow: gray;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:15px 40px;
+	text-decoration:none;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.getStartedWhite{
+    background-color:white;
+	border-radius:28px;
+	border:none;
+	display:inline-block;
+    box-shadow: gray;
+	cursor:pointer;
+	color:hsl(12, 88%, 59%);
+	font-family:Arial;
+	font-size:17px;
+	padding:15px 40px;
+	text-decoration:none;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+.getStarted:hover {
+	background-color:hsl(12, 88%, 80%);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+.getStartedWhite:hover {
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    color: hsl(12, 88%, 80%);
+}
+
+
+.getStarted:active {
+	position:relative;
+	top:1px;
+}
+
+.titre{
+    margin-top:50px;
+    
+}
+
+#presentation{
+    margin-top: 150px;
+}
+
+ p {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 21px;
+    color:hsl(227, 12%, 61%);
+}
+
+#whoarewe{
+    margin-top: 150px;
+}
+
+.numbers{
+    background-color:hsl(12, 88%, 59%);
+	border-radius:28px;
+    padding:10px 20px;
+}
+
+.commentsrow{
+    margin-top: 100px;
+}
+
+#comments p{
+    margin-top: 50px;
+    font-size: 18px;
+}
+
+.avatar{
+    height: 80px;
+    /* position: absolute; */
+    margin-top: 40px;
+}
+
+.grayBox{
+    background-color: hsl(0, 0%, 98%);
+}
+
+.orangebanner{
+    background-color:hsl(12, 88%, 59%);
+}
+
+#simplify{
+    margin-top: 150px;
+}
+
