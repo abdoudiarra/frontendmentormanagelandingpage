@@ -10,169 +10,239 @@
   <!-- Styling -->
   <link rel="stylesheet" href="./css/styles.css">
 
+  <!-- Javascript script -->
+  <script src="./js/index.js"></script>
 
   <title>Frontend Mentor | Manage landing page</title>
-
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 </head>
-<body>
-  <div class="container">
+<body class="topbanner" onload="onLoad()" style="viewport-fit: inherit;">
+  <div class="container ">
+
+
+    <!-- navbar -->
     <div class="row mt-5">
-    <nav class="d-flex">
+      <nav class="d-flex ">
         <div class="col-lg-4 mt-3">
-         <logo><img src="./images/logo.svg" alt="logo"></logo>
+          <logo><img src="./images/logo.svg" alt="logo"></logo>
         </div>
-        <ul class="navigation d-flex justify-content-between col-lg-4  mt-3">
-          <a href="#" class="text-dark mx-3"><li>Pricing</li></a>
+        <button aria-controls="navigbar" aria-expanded="false" class="mobile-nav-toggle ms-5 position-fixed">
+          <span class="sr-only ms-5"></span>
+        </button>
+        <ul id="navigbar" data-visible="false" class="navigation d-xl-flex d-lg-flex d-md-flex d-inline justify-content-between col-lg-4  mt-xl-3 mt-lg-3 mt-md-0 mb-0 mb-sm-0 mb-md-0 mt-sm-0 mt-0 me-5 navigbar">
+          <a href="#" class="text-dark mx-3"><li >Pricing</li></a>
           <a href="#" class="text-dark mx-3"><li>Product</li></a>
           <a href="#" class="text-dark mx-3"><li>About</li></a>
           <a href="#" class="text-dark mx-3"><li>Careers</li></a>
           <a href="#" class="text-dark mx-3"><li>Community</li></a>
         </ul>
-        <div class="col-lg-4 d-flex justify-content-end">
+        <div class="col-lg-4 d-flex justify-content-end d-xl-grid d-lg-grid d-md-none d-sm-none d-none">
           <a href="#" class="btn getStarted">Get Started</a>
         </div>
       </nav>
     </div>
 
-    <presentation >
+    <!-- Bring everyone together -->
+    <presentation>
       <div class="row ps-0" id="presentation">
-        <div class="col-lg-6 ps-2 titre" >
+        <div class="col-xl-6 col-lg-6 col-12 ps-2 titre text-xl-start text-lg-start text-sm-center text-center col-lg-6 order-xl-2 order-2" >
           <h1 class="display-3 fw-bold blueC">Bring everyone </h1>
           <h1 class="display-3 fw-bold blueC">together to build</h1>
           <h1 class="display-3 fw-bold blueC"> better products.</h1>
-          <p class="col-8">Manage makes it simple for software teams to plan day-to-day 
+          <p class="col-xl-8 col-12 my-4">Manage makes it simple for software teams to plan day-to-day 
             tasks while keeping the larger team goals in view.</p>
-            <div class="col-lg-4 ">
-              <a href="#" class="btn getStarted">Get Started</a>
+            <div class="col-lg-4 my-xl-0 my-5">
+              <a href="#" class="btn getStarted me-3">Get Started</a>
             </div>
         </div>
 
-          <img src="./images/illustration-intro.svg" alt="illustrations" class="col-lg-6">
-
+          <img src="./images/illustration-intro.svg" alt="illustrations" class="col-lg-6 order-xl-2 order-1">
       </div>
     </presentation>
-
-    <whoarewe>
-      <div class="row" id="whoarewe">
-        <div class="col-lg-6 ps-0 mt-5">
-          <h1 class="display-5 fw-bold blueC">What’s different about</h1>
-          <h1 class="display-5 fw-bold blueC">Manage?</h1>
-          <p class="col-8">Manage provides all the functionality your team needs, without 
-            the complexity. Our software is tailor-made for modern digital 
-            product teams. </p>
-        </div>
-        
-        <div class=" col-lg-6 p-5">
-          <div class="titleOne">
-            <div class="d-flex">
-              <span class="numbers text-light fw-bold me-3">01</span><h4 class="fw-bold mt-2">Track company-wide progress</h4>
-            </div>
-            <p>See how your day-to-day tasks fit into the wider vision. Go from 
-              tracking progress at the milestone level all the way done to the 
-              smallest of details. Never lose sight of the bigger picture again.</p>
-          </div>
-          
-         
-          <div class="titleTwo">
-            <div class="d-flex">
-              <span class="numbers text-light fw-bold me-3">02</span><h4 class="fw-bold mt-2">  Advanced built-in reports
-              </h4>
-            </div>
-            <p>Set internal delivery estimates and track progress toward company 
-              goals. Our customisable dashboard helps you build out the reports 
-              you need to keep key stakeholders informed.</p>
-          </div>
-          
-         
-          <div class="titleThree">
-            <div class="d-flex">
-              <span class="numbers text-light fw-bold me-3">03</span><h4 class="fw-bold mt-2">  Everything you need in one place
-              </h4>
-            </div>
-            <p>Stop jumping from one service to another to communicate, store files, 
-              track tasks and share documents. Manage offers an all-in-one team 
-              productivity solution.</p>
-          </div>
-        </div>
-      </div>
-    </whoarewe>
-
   </div>
-  <comments id="comments"> 
-    
-    <div class="row commentsrow">
-      <h1 class="display-5 fw-bold blueC text-center mb-5">What they've said</h1>
 
-      <div class="col-lg-4">
-        <div class="d-block">
-          <div class="text-center avatar">
-            <img src="./images/avatar-anisha.png" alt="Anisha" class="avatar">
-          </div>
-          <div class="grayBox p-2 pt-5">
-            <h4 class="fw-bold mt-2 text-center">Anisha Li</h4>
-            <p class="text-center">“Manage has supercharged our team’s workflow. The ability to maintain 
-              visibility on larger milestones at all times keeps everyone motivated.”</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4">
-        <div class="d-block">
-          <div class="text-center avatar">
-            <img src="./images/avatar-ali.png" alt="Ali" class="avatar ">
-          </div>
-          <div class="grayBox p-2 pt-5">
-            <h4 class="fw-bold mt-2 text-center">Ali Bravo</h4>
-            <p class="text-center">“We have been able to cancel so many other subscriptions since using 
-              Manage. There is no more cross-channel confusion and everyone is much 
-              more focused.”</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4">
-        <div class="d-block">
-          <div class="text-center avatar">
-            <img src="./images/avatar-richard.png" alt="Richard" class=" avatar">
-          </div>
-          <div class="grayBox p-2 pt-5">
-            <h4 class="fw-bold mt-2 text-center">Richard Watts</h4>
-            <p class="text-center">“Manage allows us to provide structure and process. It keeps us organized 
-              and focused. I can’t stop recommending them to everyone I talk to!”</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="d-flex align-content-center justify-content-center mt-5">
-      <a href="#" class="btn getStarted">Get Started</a>
+
   
-    </div>
-  </comments>
 
-  <orangeBanner>
-    <div id="simplify">
-      <div class="orangebanner pt-5 pb-5">
-          <div class="container">
-            <div class="row" >
-              <div class="col-lg-6">
-                <h1 class="display-6 fw-bold text-light">Simplify how your team</h1>
-                <h1 class="display-6 fw-bold text-light">Works today.</h1>
-              </div>
-              <div class="col-lg-6">
-                <div class="d-flex align-content-center justify-content-end mt-5">
-                  <a href="#" class="btn getStartedWhite">Get Started</a>
-              
+  <div class="bottombanner">
+    <whoarewe>
+        <div class="container">
+    
+          <div class="row zindex" id="whoarewe">
+            <div class="col-lg-6 ps-0 mt-5 text-center">
+              <h1 class="display-5 fw-bold blueC">What’s different about</h1>
+              <h1 class="display-5 fw-bold blueC">Manage?</h1>
+              <p class="col-xl-8 col-12">Manage provides all the functionality your team needs, without 
+                the complexity. Our software is tailor-made for modern digital 
+                product teams. </p>
+                <!-- <img src="./images/bg-tablet-pattern-bottom.svg" alt=""> -->
+            </div>
+            
+            <div class=" col-lg-6 p-5">
+              <div class="titleOne">
+                <div class="d-flex">
+                  <span class="numbers text-light fw-bold me-3 my-xl-0  my-5">01</span><h4 class="fw-bold mt-xl-2 mt-5">Track company-wide progress</h4>
                 </div>
+                <p>See how your day-to-day tasks fit into the wider vision. Go from 
+                  tracking progress at the milestone level all the way done to the 
+                  smallest of details. Never lose sight of the bigger picture again.</p>
+              </div>
+              
+              
+              <div class="titleTwo">
+                <div class="d-flex">
+                  <span class="numbers text-light fw-bold me-3 my-xl-0  my-5">02</span><h4 class="fw-bold mt-xl-2 mt-5">  Advanced built-in reports
+                  </h4>
+                </div>
+                <p>Set internal delivery estimates and track progress toward company 
+                  goals. Our customisable dashboard helps you build out the reports 
+                  you need to keep key stakeholders informed.</p>
+              </div>
+              
+              
+              <div class="titleThree">
+                <div class="d-flex">
+                  <span class="numbers text-light fw-bold me-3 my-xl-0  my-5">03</span><h4 class="fw-bold mt-xl-2 mt-5">  Everything you need in one place
+                  </h4>
+                </div>
+                <p>Stop jumping from one service to another to communicate, store files, 
+                  track tasks and share documents. Manage offers an all-in-one team 
+                  productivity solution.</p>
               </div>
             </div>
-      
           </div>
+        </div>
+      </whoarewe>
+      
+      <!-- Comments -->
+      <comments id="comments"> 
+        <div class="row commentsrow ">
+        <h1 class="display-5 fw-bold blueC text-center mb-5 pt-5">What they've said</h1>
+        
+        <div class="col-lg-4">
+          <div class="d-block">
+            <div class="text-center avatar">
+              <img src="./images/avatar-anisha.png" alt="Anisha" class="avatar">
+            </div>
+            <div class="grayBox p-2 pt-5">
+              <h4 class="fw-bold mt-2 text-center">Anisha Li</h4>
+              <p class="text-center">“Manage has supercharged our team’s workflow. The ability to maintain 
+                visibility on larger milestones at all times keeps everyone motivated.”</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="d-block">
+              <div class="text-center avatar">
+              <img src="./images/avatar-ali.png" alt="Ali" class="avatar ">
+            </div>
+            <div class="grayBox p-2 pt-5">
+              <h4 class="fw-bold mt-2 text-center">Ali Bravo</h4>
+              <p class="text-center">“We have been able to cancel so many other subscriptions since using 
+                Manage. There is no more cross-channel confusion and everyone is much 
+                more focused.”</p>
+              </div>
+            </div>
+          </div>
+        <div class="col-lg-4">
+          <div class="d-block">
+            <div class="text-center avatar">
+              <img src="./images/avatar-richard.png" alt="Richard" class=" avatar">
+            </div>
+            <div class="grayBox p-2 pt-5">
+              <h4 class="fw-bold mt-2 text-center">Richard Watts</h4>
+              <p class="text-center">“Manage allows us to provide structure and process. It keeps us organized 
+                and focused. I can’t stop recommending them to everyone I talk to!”</p>
+              </div>
+            </div>
+        </div>
       </div>
+      <div class="d-flex align-content-center justify-content-center mt-5">
+        <a href="#" class="btn getStarted">Get Started</a>
+        
+      </div>
+    </comments>
+  </div>
+  
+<orangeBanner>
+  <div id="simplify" class="lightorangebanner">
+    <div class="orangebanner pt-5 pb-5">
+        <div class="container">
+          <div class="row py-5" >
+            <div class="col-lg-6 text-xl-start text-center">
+              <h1 class="display-6 fw-bold text-light  ">Simplify how your team</h1>
+              <h1 class="display-6 fw-bold text-light">Works today.</h1>
+            </div>
+            <div class="col-lg-6 text-xl-start text-center">
+              <div class="d-flex align-content-center justify-content-xl-end justify-content-center mt-5">
+                <a href="#" class="btn getStartedWhite">Get Started</a>
+              </div>
+            </div>
+          </div>    
+        </div>
     </div>
-  </orangeBanner>
+  </div>
+</orangeBanner>
+
+<footer class="backgroundFooter">
+  <div class="container">
+    <div class="row pt-5">
+      <div class="col-lg-4 col-12 text-xl-start text-center order-xl-1 order-3 mt-xl-3 mt-5">
+        <logo class="mb-5 mt-xl-0 mt-5 order-xl-1"><img src="./images/logo-footer.svg" alt="logo"></logo>
+        <div class="d-flex justify-content-xl-start justify-content-evenly mt-5"> 
+          <a href="#" class="mx-xl-1"><img src="./images/icon-facebook.svg" alt="facebook"></a>
+          <a href="#" class="mx-xl-1"><img src="./images/icon-youtube.svg" alt="youtube"></a>
+          <a href="#" class="mx-xl-1"><img src="./images/icon-twitter.svg" alt="twitter"></a>
+          <a href="#" class="mx-xl-1"><img src="./images/icon-pinterest.svg" alt="pinterest"></a>
+          <a href="#" class="mx-xl-1"><img src="./images/icon-instagram.svg" alt="instagram"></a>
+        </div>
+      </div>
+      
+      <links class="col-xl-5 col-lg-5 col-12 order-xl-2 order-2 text-xl-start text-center">
+        <div class="row">
+          <div class="col-lg-6 links">
+            <ul class="col-lg-5 d-block text-decoration-none text-light">
+              <a href="#" class="text-decoration-none ">Home</a>
+              <a href="#" class="text-decoration-none ">Pricing</a>
+              <a href="#" class="text-decoration-none ">Products</a>
+              <a href="#" class="text-decoration-none ">About Us</a>
+            </ul>
+          </div>
+  
+          <div class="col-lg-6">
+            <ul class="col-lg-6 links">
+              <a href="#" class="text-decoration-none ">Careers</a>
+              <a href="#" class="text-decoration-none ">Community</a>
+              <a href="#" class="text-decoration-none ">Privacy Policy</a>
+            </ul>
+          </div>
+
+        </div>
+      </links> 
+      
+      
+      <mail class="col-xl-3 col-12 order-xl-3 order-1"> 
+
+        <div class="d-flex justify-content-center align-items-center my-5">
+          <input type="email" class=" mx-3">
+          <a href="#" class="btn getStarted">Go</a>
+        </div>
+        <!-- <p class="text-light fs-6 text-center">Copyright 2020. All Rights Reserved </p> -->
+      </mail>
+    </div>
+  </div>
+  <div class="attribution py-4">
+    <!-- Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.  -->
+    <!-- Coded by <a href="#">Your Name Here</a>. -->
+    <h6 class="text-light">Coded By : <a href="https://abdoudiarra.com" class="text-secondary" target="_blank">Abdou Diarra</a></h6>
+  </div>
+    <h6 class="text-light fs-6 text-center pb-3">Copyright 2020. All Rights Reserved </h6>
+
+</footer>
 
   <!-- <img src="./images/bg-tablet-pattern.svg" class="topRight" alt=""> -->
 
-  Shanai Gough
+  <!-- Shanai Gough
   “Their software allows us to track, manage and collaborate on our projects 
   from anywhere. It keeps the whole team in-sync without being intrusive.”
 
@@ -192,12 +262,9 @@
   Updates in your inbox…
   Go
 
-  Copyright 2020. All Rights Reserved
+  Copyright 2020. All Rights Reserved -->
 
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  
 </body>
 </html>
